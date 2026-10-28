@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070F2B"/>
+      <stop offset="100%" stop-color="#1B1A55"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#p2Grad)"/>
+  <!-- Dashboard Interface Mockup -->
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="#070F2B" stroke="#535C91" stroke-width="1.5"/>
+  <!-- Sidebar -->
+  <rect x="50" y="40" width="140" height="420" rx="12" fill="#1B1A55" opacity="0.9"/>
+  <circle cx="120" cy="80" r="14" fill="#7286D3"/>
+  <rect x="75" y="120" width="90" height="12" rx="4" fill="#9290C3" opacity="0.6"/>
+  <rect x="75" y="150" width="90" height="12" rx="4" fill="#9290C3" opacity="0.4"/>
+  <rect x="75" y="180" width="90" height="12" rx="4" fill="#9290C3" opacity="0.4"/>
+  <!-- Main analytics area -->
+  <rect x="220" y="70" width="230" height="100" rx="8" fill="#1B1A55" stroke="#535C91" stroke-width="1"/>
+  <rect x="480" y="70" width="240" height="100" rx="8" fill="#1B1A55" stroke="#535C91" stroke-width="1"/>
+  <!-- Chart visual -->
+  <path d="M 230 330 Q 330 220 430 270 T 630 190 T 700 230" fill="none" stroke="#8EA7E9" stroke-width="3"/>
+  <path d="M 230 330 Q 330 220 430 270 T 630 190 T 700 230 L 700 370 L 230 370 Z" fill="#7286D3" opacity="0.15"/>
+  <!-- Clear Placeholder Ribbon -->
+  <rect x="230" y="390" width="340" height="36" rx="6" fill="#070F2B" stroke="#7286D3" stroke-width="1.5"/>
+  <text x="400" y="413" font-family="sans-serif" font-weight="600" font-size="12" fill="#FFF2F2" text-anchor="middle" letter-spacing="1">
+    [ CONTOH PROJECT 2 — PREVIEW PLACEHOLDER ]
+  </text>
+</svg>

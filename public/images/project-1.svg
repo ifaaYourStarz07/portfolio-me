@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B1A55"/>
+      <stop offset="100%" stop-color="#070F2B"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#p1Grad)"/>
+  <!-- Browser window chrome -->
+  <rect x="50" y="40" width="700" height="420" rx="12" fill="#070F2B" stroke="#535C91" stroke-width="1.5"/>
+  <rect x="50" y="40" width="700" height="40" rx="12" fill="#1B1A55"/>
+  <circle cx="80" cy="60" r="6" fill="#7286D3"/>
+  <circle cx="100" cy="60" r="6" fill="#8EA7E9"/>
+  <circle cx="120" cy="60" r="6" fill="#9290C3"/>
+  <rect x="150" y="50" width="300" height="20" rx="6" fill="#070F2B" opacity="0.6"/>
+  <!-- UI Mockup Wireframe -->
+  <rect x="80" y="110" width="220" height="140" rx="8" fill="#1B1A55" stroke="#7286D3" stroke-width="1"/>
+  <rect x="320" y="110" width="400" height="30" rx="6" fill="#535C91" opacity="0.4"/>
+  <rect x="320" y="155" width="350" height="16" rx="4" fill="#9290C3" opacity="0.3"/>
+  <rect x="320" y="180" width="280" height="16" rx="4" fill="#9290C3" opacity="0.3"/>
+  <rect x="320" y="215" width="120" height="34" rx="6" fill="#7286D3"/>
+  <!-- Lower Cards -->
+  <rect x="80" y="280" width="200" height="140" rx="8" fill="#1B1A55" opacity="0.7"/>
+  <rect x="300" y="280" width="200" height="140" rx="8" fill="#1B1A55" opacity="0.7"/>
+  <rect x="520" y="280" width="200" height="140" rx="8" fill="#1B1A55" opacity="0.7"/>
+  <!-- Clear Placeholder Ribbon -->
+  <rect x="230" y="380" width="340" height="36" rx="6" fill="#070F2B" stroke="#8EA7E9" stroke-width="1.5"/>
+  <text x="400" y="403" font-family="sans-serif" font-weight="600" font-size="12" fill="#FFF2F2" text-anchor="middle" letter-spacing="1">
+    [ CONTOH PROJECT 1 — PREVIEW PLACEHOLDER ]
+  </text>
+</svg>

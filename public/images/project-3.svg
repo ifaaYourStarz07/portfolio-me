@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#535C91"/>
+      <stop offset="50%" stop-color="#1B1A55"/>
+      <stop offset="100%" stop-color="#070F2B"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#p3Grad)"/>
+  <!-- Creative Canvas Visual Elements -->
+  <circle cx="250" cy="220" r="120" fill="none" stroke="#7286D3" stroke-width="2" stroke-dasharray="6 4" opacity="0.7"/>
+  <polygon points="500,100 620,320 380,320" fill="#1B1A55" stroke="#8EA7E9" stroke-width="2" opacity="0.6"/>
+  <rect x="200" y="160" width="180" height="180" rx="20" fill="#070F2B" stroke="#9290C3" stroke-width="1.5" transform="rotate(15 290 250)" opacity="0.85"/>
+  <circle cx="500" cy="220" r="50" fill="#7286D3" opacity="0.3"/>
+  <!-- Monospace terminal bar -->
+  <rect x="180" y="320" width="440" height="40" rx="8" fill="#070F2B" stroke="#535C91" stroke-width="1"/>
+  <text x="200" y="345" font-family="monospace" font-size="13" fill="#E5E0FF">
+    &gt; initialize_creative_canvas() // render OK
+  </text>
+  <!-- Clear Placeholder Ribbon -->
+  <rect x="230" y="400" width="340" height="36" rx="6" fill="#070F2B" stroke="#8EA7E9" stroke-width="1.5"/>
+  <text x="400" y="423" font-family="sans-serif" font-weight="600" font-size="12" fill="#FFF2F2" text-anchor="middle" letter-spacing="1">
+    [ CONTOH PROJECT 3 — PREVIEW PLACEHOLDER ]
+  </text>
+</svg>

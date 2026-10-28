@@ -1,0 +1,166 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-midnight: #070F2B;
+  --color-deep-indigo: #1B1A55;
+  --color-muted-indigo: #535C91;
+  --color-dusty-lavender: #9290C3;
+  --color-periwinkle: #7286D3;
+  --color-cornflower: #8EA7E9;
+  --color-pale-lavender: #E5E0FF;
+  --color-blush-white: #FFF2F2;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Syne', 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --midnight: #070F2B;
+  --deep-indigo: #1B1A55;
+  --muted-indigo: #535C91;
+  --dusty-lavender: #9290C3;
+  --periwinkle: #7286D3;
+  --cornflower: #8EA7E9;
+  --pale-lavender: #E5E0FF;
+  --blush-white: #FFF2F2;
+}
+
+/* Base resets & typography */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--midnight);
+  color: var(--blush-white);
+  font-family: var(--font-sans);
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--midnight);
+  selection-background-color: var(--periwinkle);
+  selection-color: var(--midnight);
+}
+
+::selection {
+  background-color: #7286D3;
+  color: #070F2B;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070F2B;
+}
+::-webkit-scrollbar-thumb {
+  background: #1B1A55;
+  border-radius: 4px;
+  border: 2px solid #070F2B;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #535C91;
+}
+
+/* Subtle gradient mesh / backdrop */
+.bg-mesh {
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(27, 26, 85, 0.45) 0px, transparent 50%),
+    radial-gradient(at 90% 10%, rgba(114, 134, 211, 0.15) 0px, transparent 40%),
+    radial-gradient(at 50% 80%, rgba(83, 92, 145, 0.25) 0px, transparent 60%);
+}
+
+/* Editorial Glass Surface */
+.glass-panel {
+  background-color: rgba(27, 26, 85, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(146, 144, 195, 0.18);
+}
+
+.glass-panel:hover {
+  border-color: rgba(142, 167, 233, 0.35);
+}
+
+/* Interactive Button Hover */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--periwinkle);
+  color: var(--midnight);
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px rgba(114, 134, 211, 0.25);
+}
+.btn-primary:hover {
+  background-color: var(--cornflower);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(114, 134, 211, 0.4);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: var(--pale-lavender);
+  border: 1px solid rgba(146, 144, 195, 0.35);
+  font-weight: 500;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-secondary:hover {
+  border-color: var(--periwinkle);
+  color: var(--blush-white);
+  background-color: rgba(27, 26, 85, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Motion & Animation helpers */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay classes */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* Accessible Focus States */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--periwinkle);
+  outline-offset: 3px;
+}
+
+/* Reduced Motion respect */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal-on-scroll,
+  .btn-primary,
+  .btn-secondary,
+  .glass-panel {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
