@@ -14,18 +14,20 @@ class PortfolioController extends Controller
      */
     public function index(): View
     {
-        $profile = [
-            'name' => 'Nama Anda',
-            'role' => 'Creative Developer & Student',
-            'status' => 'Siswa / Mahasiswa Web Development',
-            'headline' => 'I BUILD DIGITAL EXPERIENCES.',
-            'subtitle' => 'Pelajar dan aspiring web developer yang antusias membangun aplikasi web modern, performan tinggi, dan antarmuka interaktif yang elegan.',
-            'bio_story' => 'Saya seorang pelajar yang sedang mendalami dunia software development dan rekayasa web. Perjalanan saya dimulai dari rasa ingin tahu bagaimana sebuah website dapat menyajikan pengalaman interaktif yang intuitif bagi pengguna. Saat ini saya berfokus mendalami ekosistem Laravel di backend dan JavaScript/Tailwind CSS di frontend.',
-            'learning_focus' => 'Fokus saat ini mencakup arsitektur MVC Laravel, perancangan basis data relasional, RESTful API, serta teknik animasi web responsif.',
-            'education' => 'Pendidikan Web Development & Rekayasa Perangkat Lunak',
-            'location' => 'Indonesia',
-            'avatar_url' => asset('images/profile-placeholder.svg'),
-        ];
+        
+$profile = [
+    'name' => 'Tifayatul Husna Azahra',
+    'role' => 'Creative Developer & Student',
+    'status' => 'Siswa / Mahasiswa Web Development',
+    'headline' => 'I BUILD DIGITAL EXPERIENCES.',
+    'subtitle' => 'Pelajar dan aspiring web developer yang antusias membangun aplikasi web modern, performan tinggi, dan antarmuka interaktif yang elegan.',
+    'bio_story' => 'Saya seorang pelajar yang sedang mendalami dunia software development dan rekayasa web. Perjalanan saya dimulai dari rasa ingin tahu bagaimana sebuah website dapat menyajikan pengalaman interaktif yang intuitif bagi pengguna. Saat ini saya berfokus mendalami ekosistem Laravel di backend dan JavaScript/Tailwind CSS di frontend.',
+    'learning_focus' => 'Fokus saat ini mencakup arsitektur MVC Laravel, perancangan basis data relasional, RESTful API, serta teknik animasi web responsif.',
+    'education' => 'Pendidikan Web Development & Rekayasa Perangkat Lunak',
+    'location' => 'Indonesia',
+    'avatar_url' => 'images/pp.jpeg',
+];
+
 
         $projects = [
             [
